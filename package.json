@@ -4,17 +4,21 @@
   "description": "My personal blog, portfolio, and website at https://lytedev.io",
   "main": "index.js",
   "scripts": {
-    "build-styles": "mkdirp ./static/styles && stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/ --out static/styles/",
-    "build-scripts": "mkdirp ./static/scripts && coffee -o ./static/scripts/ --compile ./src/",
-		"build": "npm run build-styles & npm run build-scripts",
+    "build-styles": "mkdirp ./static/styles && stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/styles/ --out static/styles/",
+    "build-scripts": "mkdirp ./static/scripts && coffee -o ./static/scripts/ --compile ./src/scripts/",
+    "build-logo": "coffee ./src/logo/generate-logo.coffee",
+    "build": "npm run build-styles & npm run build-scripts & npm run build-logo",
     "watch-styles": "nodemon -e styl -x \"npm run build-styles\"",
     "watch-scripts": "nodemon -e coffee -x \"npm run build-scripts\"",
-    "watch": "npm run watch-styles & npm run watch-scripts",
+    "watch-logo": "nodemon -e coffee,pug --watch ./src/logo/ -x \"npm run build-logo\"",
+    "watch": "npm run watch-styles & npm run watch-scripts & npm run watch-logo",
     "hugo": "hugo serve",
+    "hugo-lan": "hugo serve --bind 0.0.0.0",
     "watch-theme": "cd themes/lytedev && npm run watch",
     "build-theme": "cd themes/lytedev && npm run build",
     "build-all": "npm run build-theme && npm run build && hugo",
     "watch-all": "npm run watch-theme & npm run watch & npm run hugo",
+    "watch-all-lan": "npm run watch-theme & npm run watch & npm run hugo-lan",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -41,6 +45,8 @@
     "nodemon": "^1.11.0",
     "postcss": "^5.2.15",
     "poststylus": "^0.2.3",
+    "pug": "^2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6",
     "stylus": "^0.54.5"
   }
 }

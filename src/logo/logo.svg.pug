@@ -1,0 +1,42 @@
+- var textLeft = 77;
+- var textSpacing = textLeft + 62;
+- var textTop = 50;
+
+a#site-logo(href="/")
+	svg#lytedev-logo-svg(xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" title="lytedev LED logo" alt="lytedev LED logo")
+		defs
+			linearGradient(id="lytedev-logo-foreground-gradient" x1="0" x2="0" y1="0" y2="1")
+				stop(offset="0%" stop-color="rgba(255, 255, 255, 1.0)")
+				stop(offset="100%" stop-color="rgba(255, 255, 255, 0.5)")
+				//- stop(offset="0%" stop-color="#ffffff")
+
+			filter(id="icondropshadow" height="130%")
+				feGaussianBlur(in="SourceAlpha" stdDeviation="1")
+				feOffset(dx="0" dy="2.5" result="offsetblur")
+				feMerge
+					feMergeNode
+					feMergeNode(in="SourceGraphic")
+
+			filter(id="textdropshadow" height="130%")
+				feGaussianBlur(in="SourceAlpha" stdDeviation="1")
+				feOffset(dx="0" dy="1" result="offsetblur")
+				feMerge
+					feMergeNode
+					feMergeNode(in="SourceGraphic")
+
+		//- rect(width="100%" height="100%" fill="#e7e7e7" stroke="transparent")
+		//- rect(width="2" height="100%" fill="url(#lytedev-logo-foreground-gradient)" stroke="transparent")
+
+		//- path(stroke="url(#lytedev-logo-foreground-gradient)" fill="transparent" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M10 14 H 64.5 V 38.6 H -20")
+		//- path(stroke="url(#lytedev-logo-foreground-gradient)" fill="transparent" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M10 14 H 44.5 V 38.6 H -20")
+
+		path(stroke="url(#lytedev-logo-foreground-gradient)" fill="transparent" stroke-linecap="round" stroke-linejoin="round" stroke-width=strokeWidth d=path style="filter:url(#icondropshadow)")
+
+		//- path(stroke="url(#lytedev-logo-foreground-gradient)" fill="transparent" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M 15 38.6 h 0.1 v 5")
+
+		//- should draw with inherited text's CSS styles
+		text(x=textLeft y=textTop id="logo-text-part-one" fill="url(#lytedev-logo-foreground-gradient)" style="filter:url(#textdropshadow)")
+			| lyte
+		text(x=textSpacing y=textTop id="logo-text-part-two" fill="url(#lytedev-logo-foreground-gradient)" style="filter:url(#textdropshadow)")
+			| dev
+
