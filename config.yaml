@@ -1,0 +1,29 @@
+languageCode: "en-us"
+title: "lytedev"
+baseURL: "https://lytedev.io/"
+theme: "lytedev"
+
+permalinks:
+  post: /blog/:title
+
+menu:
+  main:
+    - Name: "About"
+      Pre: ""
+      Weight: -100
+      Identifier: "about"
+      URL: "/about"
+    # - Name: "Blog"
+    #   Pre: ""
+    #   Weight: -110
+    #   Identifier: "blog"
+    #   URL: "/blog"
+
+params:
+  index:
+    image: http://i.imgur.com/necF7i2.jpg
+    imageOverlayColor: "#000"
+    imageOverlayOpacity: "0.5"
+  author:
+    name: "Daniel Flanagan"
+    email: "daniel@lytedev.io"
