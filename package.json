@@ -1,0 +1,46 @@
+{
+  "name": "lytedev-site",
+  "version": "0.1.0",
+  "description": "My personal blog, portfolio, and website at https://lytedev.io",
+  "main": "index.js",
+  "scripts": {
+    "build-styles": "mkdirp ./static/styles && stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/ --out static/styles/",
+    "build-scripts": "mkdirp ./static/scripts && coffee -o ./static/scripts/ --compile ./src/",
+		"build": "npm run build-styles & npm run build-scripts",
+    "watch-styles": "nodemon -e styl -x \"npm run build-styles\"",
+    "watch-scripts": "nodemon -e coffee -x \"npm run build-scripts\"",
+    "watch": "npm run watch-styles & npm run watch-scripts",
+    "hugo": "hugo serve",
+    "watch-theme": "cd themes/lytedev && npm run watch",
+    "build-theme": "cd themes/lytedev && npm run build",
+    "build-all": "npm run build-theme && npm run build && hugo",
+    "watch-all": "npm run watch-theme & npm run watch & npm run hugo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lytedev/lytedev.github.io.git"
+  },
+  "keywords": [
+    "hugo",
+    "blog",
+    "site",
+    "portfolio",
+    "static-site"
+  ],
+  "author": "daniel@lytedev.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lytedev/lytedev.github.io/issues"
+  },
+  "homepage": "https://github.com/lytedev/lytedev.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^6.7.5",
+    "coffee-script": "^1.12.4",
+    "node-mkdirp": "^0.0.1",
+    "nodemon": "^1.11.0",
+    "postcss": "^5.2.15",
+    "poststylus": "^0.2.3",
+    "stylus": "^0.54.5"
+  }
+}
