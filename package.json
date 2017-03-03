@@ -20,6 +20,7 @@
     "watch-all": "npm run watch-theme & npm run watch & npm run hugo",
     "watch-all-lan": "npm run watch-theme & npm run watch & npm run hugo-lan",
     "dev": "npm run watch-all",
+    "dev-lan": "npm run watch-all-lan",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
