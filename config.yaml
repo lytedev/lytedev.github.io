@@ -9,6 +9,11 @@ permalinks:
 
 menu:
   main:
+    - Name: "Blog"
+      Pre: ""
+      Weight: -100
+      Identifier: "blog"
+      URL: "/blog"
     - Name: "About"
       Pre: ""
       Weight: -100
