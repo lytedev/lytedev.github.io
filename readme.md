@@ -17,10 +17,11 @@
 	`yarn run build-all`
 
 * Or (if we're developing) serve it up and rebuild everything as files are
-	updated: `yarn run dev` (visit http://localhost:1313)
+	updated: `yarn run dev` (visit [http://localhost:1313][localdev])
 
 See `package.json` for other build/watch combinations and options.
 
 ---
 
 [hugo]: https://gohugo.io
+[localdev]: http://localhost:1313
