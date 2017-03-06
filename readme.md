@@ -16,8 +16,8 @@
 * Build the theme and our files:
 	`yarn run build-all`
 
-* Or (if we're developing) watch and rebuild everything as needed:
-	`yarn run watch-all`
+* Or (if we're developing) serve it up and rebuild everything as files are
+	updated: `yarn run dev` (visit http://localhost:1313)
 
 See `package.json` for other build/watch combinations and options.
 
