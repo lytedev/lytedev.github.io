@@ -9,6 +9,6 @@ description: "Here you can find articles I've written. Usually they're about pro
 ---
 
 <div class="text-center">
-	<h2>Coming Soon!</h2>
-	<p>The blog is a work in progress!</p>
+  <h2>Coming Soon!</h2>
+  <p>The blog is a work in progress!</p>
 </div>
