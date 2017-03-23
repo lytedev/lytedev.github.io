@@ -30,12 +30,12 @@ tech and audio-visual systems there and I love it. My faith is the framework
 around which I've built my life and it has never failed me.
 
 I'm a big proponent of self-discipline, working from home, and working less than
-40 hours per week.. My favorite video games include *Super Smash Bros. Melee*,
+40 hours per week. My favorite video games include *Super Smash Bros. Melee*,
 *Quake 3*, *World of Warcraft*, *Counter Strike: Global Offensive*, *Portal*,
-*Half-Life 2*, and others.  I listen to a lot of metal (*DragonForce*!) and
-electronic music. My favorite drink is *Red Bull Yellow Edition* and prefer tea
-over coffee. I run Arch Linux on all my machines and have almost got my wife to
-switch over to Ubuntu, though in fairness it's mostly due to her MacBook
+*Half-Life 2*, and others. I listen to a lot of metal (*DragonForce*!) and
+electronic music. My favorite drink is *Red Bull Yellow Edition* and I prefer
+tea over coffee. I run Arch Linux on all my machines and have almost got my wife
+to switch over to Ubuntu, though in fairness it's mostly due to her MacBook
 beginning to show its age. I have an odd obsession with mechanical keyboards
 (thanks, reddit).
 
@@ -47,7 +47,7 @@ beginning to show its age. I have an odd obsession with mechanical keyboards
 </div>
 
 I'm married to Valerie, the most beautiful woman in the entire world. She's
-a trained and working Physical Therapist's Assistant and somewhat of a fitness
+a trained and working Physical Therapist Assistant and somewhat of a fitness
 and health nut, which has yet to rub off on me (darn!). We've been married since
 late 2016 and we fall more in love every day. We currently live in a cozy little
 apartment which she somehow manages to keep clean, organized, and

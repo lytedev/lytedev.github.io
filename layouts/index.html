@@ -107,6 +107,8 @@
 			<header><h2>Recent Blog Entries</h2></header>
 			{{ range $i, $p := where (.Paginate .Data.Pages).Pages "Section" "blog" }}
 				{{ $p.Render "li" }}
+			{{ else }}
+				<p>Looks like there's nothing here!... yet!</p>
 			{{ end }}
 		</div>
 	</section>
