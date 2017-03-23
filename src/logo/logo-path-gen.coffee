@@ -1,5 +1,5 @@
 svgPadding = 5
-yOffset = 12
+yOffset = 1
 xOffset = 0.5
 
 shineLength = 5

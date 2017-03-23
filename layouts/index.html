@@ -2,6 +2,10 @@
 	<div id="intro">
 		<h2>Hi, I'm Daniel!</h2>
 		<p>I'm a web developer and software engineer from Kansas City!</p>
+		<br />
+		<p>Have a project for me?</p>
+		<br />
+		<a class="button primary" href="/contact">Contact Me</a>
 	</div>
 	<i class="hero-down-indicator scroll-to-main">
 		<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 100">
@@ -12,27 +16,90 @@
 {{ end }}
 
 {{ define "main" }}
-	<section class="text-center" id="index-skills-section">
-		<header><h2>What I Do</h2></header>
-		<div class="grid">
-			<div class="third">
-				<header>
-					<h3>Web Development</h3>
-				</header>
-				<p>I specialize in creating beautiful and usable user experiences - especially in the web browser.</p>
+	<section class="content text-center" id="index-skills-section">
+		<div class="wrapper fat">
+			<header><h2>What I Do</h2></header>
+			<hr />
+			<div class="grid">
+				<div class="third" class="small-block-item">
+					<header>
+						<h3>Web Development</h3>
+					</header>
+					<p>
+						I specialize in creating beautiful and usable user experiences - especially in the web browser.
+					</p>
+				</div>
+				<div class="third" class="small-block-item">
+					<header>
+						<h3>Mobile Design</h3>
+					</header>
+					<p>
+						The majority of web traffic is now mobile. Mobile-first and responsive design are a must.
+					</p>
+				</div>
+				<div class="third" class="small-block-item">
+					<header>
+						<h3>User Experiences</h3>
+					</header>
+					<p>
+						Software - web sites and apps included - should be a joy to interact with, simple to use, and beautiful.
+					</p>
+				</div>
 			</div>
-			<div class="third">
-				<header>
-					<h3>Mobile Design</h3>
-				</header>
-				<p>The majority of web traffic is now mobile. Mobile-first and responsive design is a must.</p>
+		</div>
+	</section>
+	<section class="alt-bg content text-center" id="index-skills-section">
+		<div class="wrapper fat">
+			<p>
+				Technology is an ever-changing and constantly-shifting field of work. I relish in the quick-moving world of software development cycles and ever-new and upcoming technologies. I am constantly searching for and trying to create the next cool thing.
+			</p>
+		</div>
+	</section>
+	<section class="content text-center" id="how-section">
+		<div class="wrapper fat">
+			<header><h2>How I Do It</h2></header>
+			<hr />
+			<div class="grid">
+				<div class="third" class="small-block-item">
+					<header>
+						<h3>Planning & Preparation</h3>
+					</header>
+					<p>
+						I begin by scoping out the project and structuring as many smaller sub-tasks for organization.
+					</p>
+				</div>
+				<div class="third" class="small-block-item">
+					<header>
+						<h3>Iterate Quickly</h3>
+					</header>
+					<p>
+						I deploy my work often in an effort to keep the development process highly interactive and feedback oriented.
+					</p>
+				</div>
+				<div class="third" class="small-block-item">
+					<header>
+						<h3>Automated Maintenance</h3>
+					</header>
+					<p>
+						The latest tooling and modern practices allow me to leave the smart stuff to the computers.
+					</p>
+				</div>
 			</div>
-			<div class="third">
-				<header>
-					<h3>User Experiences</h3>
-				</header>
-				<p>Software, websites included, should be a joy to interact with, simple to use, and beautiful.</p>
-			</div>
+		</div>
+	</section>
+	<section class="content text-center alt-bg" id="how-section">
+		<div class="wrapper fat">
+			<p>
+				If you're looking for a software engineer or web developer and need convincing that I'm worth contacting, you can find <a target="_blank" href="https://docs.google.com/document/d/1fPVh7DGWDL7TxYdE9Rz5iNSZQrAhlxdFaCuONYgcs64/edit?usp=sharing">my resume</a> on Google Drive and my portfolio of public projects and open source on <a target="_blank" href="https://github.com/lytedev">my GitHub</a> profile.
+			</p>
+			<a class="button primary" href="/contact">Contact Me</a>
+			<p>
+				I'm always on the lookout for cool opportunities. If you think you've got one, feel free to at least shoot me an email - especially if you're a business or organization looking to have website or software work done! If you'd like, here are some links to some of my stuff.
+			</p>
+			<hr />
+			<a class="button large" href="https://github.com/lytedev" target="_blank">GitHub</a>
+			<a class="button large" href="https://twitter.com/lytedev" target="_blank">Twitter</a>
+			<a class="button large" href="mailto:daniel@lytedev.io" target="_blank">Email</a>
 		</div>
 	</section>
 {{ end }}

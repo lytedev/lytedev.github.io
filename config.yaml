@@ -14,6 +14,11 @@ menu:
       Weight: -100
       Identifier: "blog"
       URL: "/blog"
+    - Name: "Contact"
+      Pre: ""
+      Weight: -100
+      Identifier: "contact"
+      URL: "/contact"
     - Name: "About"
       Pre: ""
       Weight: -100

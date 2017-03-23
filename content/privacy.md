@@ -4,11 +4,12 @@ image: https://unsplash.it/200/50?blur&gravity=center
 imageOverlayColor: "#000"
 imageOverlayOpacity: 0.5
 heroBackgroundColor: "#333"
-title: Blog
-description: "My thoughts on technology and life."
+title: Privacy Policy
+description: "Basically, I use Google Analytics."
 ---
 
 <div class="text-center">
-  <h2>Coming Soon!</h2>
-  <p>The blog is a work in progress!</p>
+	<p>
+		Everything is public. Run.
+	</p>
 </div>

@@ -4,7 +4,7 @@
   "description": "My personal blog, portfolio, and website at https://lytedev.io",
   "main": "index.js",
   "scripts": {
-    "build-styles": "mkdirp ./static/styles && stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/styles/ --out static/styles/",
+    "build-styles": "mkdirp ./static/styles && stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/styles/site.styl --out static/styles/site.css",
     "build-scripts": "mkdirp ./static/scripts && coffee -o ./static/scripts/ --compile ./src/scripts/",
     "build-logo": "coffee ./src/logo/generate-logo.coffee",
     "build": "npm run build-styles & npm run build-scripts & npm run build-logo",
