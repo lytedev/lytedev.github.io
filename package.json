@@ -12,15 +12,17 @@
     "watch-scripts": "nodemon -e coffee -x \"npm run build-scripts\"",
     "watch-logo": "nodemon -e coffee,pug --watch ./src/logo/ -x \"npm run build-logo\"",
     "watch": "npm run watch-styles & npm run watch-scripts & npm run watch-logo",
+    "hugo-build": "hugo",
     "hugo": "hugo serve --buildDrafts",
     "hugo-lan": "hugo serve --bind 0.0.0.0 --buildDrafts",
     "watch-theme": "cd themes/lytedev && npm run watch",
     "build-theme": "cd themes/lytedev && npm run build",
-    "build-all": "npm run build-theme && npm run build && npm run hugo",
+    "build-all": "npm run build-theme && npm run build && npm run hugo-build",
     "watch-all": "npm run watch-theme & npm run watch & npm run hugo",
     "watch-all-lan": "npm run watch-theme & npm run watch & npm run hugo-lan",
     "dev": "npm run watch-all",
     "dev-lan": "npm run watch-all-lan",
+    "deploy": "npm run build-all && coffee ./deploy.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -43,6 +45,7 @@
   "dependencies": {
     "autoprefixer": "^6.7.5",
     "coffee-script": "^1.12.4",
+    "mkdirp": "^0.5.1",
     "node-mkdirp": "^0.0.1",
     "nodemon": "^1.11.0",
     "postcss": "^5.2.15",
