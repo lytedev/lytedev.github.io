@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://lytedev.io/about/</loc>
+    <lastmod>2017-02-22T14:43:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lytedev.io/contact/</loc>
+    <lastmod>2017-02-22T14:43:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lytedev.io/privacy/</loc>
+    <lastmod>2017-02-22T14:43:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lytedev.io/thanks/</loc>
+    <lastmod>2017-02-22T14:43:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lytedev.io/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lytedev.io/</loc>
+    <lastmod>2017-02-22T14:43:02-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
