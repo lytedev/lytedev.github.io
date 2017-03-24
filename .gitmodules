@@ -1,3 +1,4 @@
 [submodule "themes/lytedev"]
 	path = themes/lytedev
+	branch = master
 	url = https://github.com/lytedev/lytedev-hugo-theme
