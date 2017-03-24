@@ -19,6 +19,9 @@
 * Or (if we're developing) serve it up and rebuild everything as files are
 	updated: `yarn run dev` (visit [http://localhost:1313][localdev])
 
+* The site can be deployed via the `deploy.coffee` script. You can run it with:
+	`yarn run deploy`
+
 See `package.json` for other build/watch combinations and options.
 
 ---

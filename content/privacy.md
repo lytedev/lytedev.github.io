@@ -1,6 +1,6 @@
 ---
 date: 2017-02-22T14:43:02-06:00
-image: https://unsplash.it/200/50?blur&gravity=center
+image: /img/lock.png
 imageOverlayColor: "#000"
 imageOverlayOpacity: 0.5
 heroBackgroundColor: "#333"

@@ -32,7 +32,7 @@ menu:
 
 params:
   index:
-    image: http://i.imgur.com/necF7i2.jpg
+    image: /img/desktop-blurred.png
     heroBackgroundColor: "#333"
     imageOverlayColor: "#000"
     imageOverlayOpacity: "0.5"
