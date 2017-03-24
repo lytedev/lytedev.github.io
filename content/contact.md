@@ -1,6 +1,6 @@
 ---
 date: 2017-02-22T14:43:02-06:00
-image: /img/pen-journal.png
+image: /img/pen-journal.jpg
 imageOverlayColor: "#000"
 imageOverlayOpacity: 0.7
 heroBackgroundColor: "#333"

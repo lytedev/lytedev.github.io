@@ -32,7 +32,7 @@ menu:
 
 params:
   index:
-    image: /img/desktop-blurred.png
+    image: /img/desktop-blurred.jpg
     heroBackgroundColor: "#333"
     imageOverlayColor: "#000"
     imageOverlayOpacity: "0.5"

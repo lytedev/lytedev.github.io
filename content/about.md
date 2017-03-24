@@ -1,6 +1,6 @@
 ---
 date: 2017-02-22T14:43:02-06:00
-image: /img/space.png
+image: /img/space.jpg
 imageOverlayColor: "#000"
 imageOverlayOpacity: 0.6
 heroBackgroundColor: "#0af"
@@ -10,7 +10,7 @@ description: "A little about the man behind the web."
 
 <div class="text-center">
 	<figure>
-		<img src="/img/daniel.png" class="avatar" alt="A photo of Daniel taken on his wedding day." title="Daniel">
+		<img src="/img/daniel.jpg" class="avatar" alt="A photo of Daniel taken on his wedding day." title="Daniel">
 		<figcaption style="visibility:hidden;height:0"></figcaption>
 	</figure>
 </div>
@@ -41,7 +41,7 @@ beginning to show its age. I have an odd obsession with mechanical keyboards
 
 <div class="text-center">
 	<figure>
-		<img src="/img/daniel-and-valerie.png" class="avatar" alt="Daniel and his wife in a forest." title="Daniel and Valerie">
+		<img src="/img/daniel-and-valerie.jpg" class="avatar" alt="Daniel and his wife in a forest." title="Daniel and Valerie">
 		<figcaption>My wife and I. Yes. It's true. I only have the <strong>one</strong> pose.</figcaption>
 	</figure>
 </div>
@@ -100,6 +100,6 @@ game development industry is currently a bit overloaded.
 
 
 [daniel-and-valerie-site]: https://danielandvalerie.life
-[daniel-and-valerie-pic]: /img/daniel-and-valerie.png
+[daniel-and-valerie-pic]: /img/daniel-and-valerie.jpg
 [emfluence]: https://emfluence.com
 [iqc]: https://iqcalculators.com

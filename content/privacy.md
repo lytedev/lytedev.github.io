@@ -1,6 +1,6 @@
 ---
 date: 2017-02-22T14:43:02-06:00
-image: /img/lock.png
+image: /img/lock.jpg
 imageOverlayColor: "#000"
 imageOverlayOpacity: 0.5
 heroBackgroundColor: "#333"
