@@ -23,6 +23,7 @@
     "dev": "npm run watch-all",
     "dev-lan": "npm run watch-all-lan",
     "deploy": "npm run build-all && coffee ./deploy.coffee",
+    "deploy-no-build": "coffee ./deploy.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -45,6 +46,7 @@
   "dependencies": {
     "autoprefixer": "^6.7.5",
     "coffee-script": "^1.12.4",
+    "gh-pages": "^0.12.0",
     "mkdirp": "^0.5.1",
     "node-mkdirp": "^0.0.1",
     "nodemon": "^1.11.0",
