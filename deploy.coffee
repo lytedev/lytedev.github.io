@@ -3,7 +3,7 @@ path = require 'path'
 
 publicPath = path.join __dirname, 'public'
 options =
-	branch: 'gh-pages'
+	branch: 'master'
 	message: 'Auto-generated commit via deploy script'
 ghpages.publish publicPath, options, (err) ->
 	if err
