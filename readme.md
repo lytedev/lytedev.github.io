@@ -7,8 +7,14 @@
 * Setup [Hugo][hugo]:
 	`export GOPATH="$HOME/go" && go get -v github.com/spf13/hugo`
 
-* Clone the theme to `themes/lytedev`:
-	`git clone https://github.com/lytedev/lytedev-hugo-theme.git themes/lytedev`
+* Pull down this repository (and it's submodules, which contains the theme):
+	`git clone --recursive https://github.com/lytedev/lytedev.github.io.git`
+
+* Or if you just want the theme submodule after cloning this repository:
+	`git submodule update --init --recursive`
+
+* Or still if you just want the theme in another directory and symlinked in:
+	`git clone https://github.com/lytedev/lytedev-hugo-theme.git ../lytedev-hugo-theme && ln -s "$PWD"/../lytedev-hugo-theme "$PWD"/themes/lytedev`
 
 * Pull down dependencies:
 	`pushd themes/lytedev && yarn && popd && yarn`
