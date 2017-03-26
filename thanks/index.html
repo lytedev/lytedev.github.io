@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="/styles/main.css"></script>
 		<link rel="stylesheet" href="/styles/site.css" />
 <link rel="shortcut icon" href="/img/favicon.png">
+<link rel="icon" href="/img/favicon.png">
 
 	</head>
 	<body class="page-page">
@@ -23,7 +24,7 @@
 					<a id="site-logo" href="/"><svg id="lytedev-logo-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" title="lytedev LED logo" alt="lytedev LED logo" style="font:400 36px Ubuntu;"><style></style><defs><linearGradient id="logo-svg-color-gradient" x1="0" x2="0" y1="0" y2="1"><stop id="logo-svg-color-stop-1" offset="0%" stop-color="rgba(255, 255, 255, 1.0)"></stop><stop id="logo-svg-color-stop-2" offset="100%" stop-color="rgba(255, 255, 255, 0.5)"></stop></linearGradient><linearGradient id="logo-svg-icon-gradient" x1="0" x2="0" y1="0" y2="1"><stop id="logo-svg-icon-color-stop-1" offset="0%" stop-color="rgba(255, 255, 255, 1.0)"></stop><stop id="logo-svg-icon-color-stop-2" offset="100%" stop-color="rgba(255, 255, 255, 0.5)"></stop></linearGradient><linearGradient id="lytedev-logo-foreground-gradient" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="rgba(255, 255, 255, 1.0)"></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0.5)"></stop></linearGradient><filter id="icondropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="1"></feGaussianBlur><feOffset dx="0" dy="1.5" result="offsetblur"></feOffset><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter><filter id="textdropshadow" height="130%"><feGaussianBlur in="SourceAlpha" stdDeviation="1"></feGaussianBlur><feOffset dx="0" dy="1" result="offsetblur"></feOffset><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><path stroke="url(#logo-svg-icon-gradient)" fill="transparent" stroke-linecap="round" stroke-linejoin="round" id="lytedev-logo-icon" stroke-width="3.5" d="M 18.5 43.6 h 30 v -12.3 a 15 14.057142857142859 0 0 0 -30 0 v 12.3 M 18.5 43.6 m 8 0 v 7 m 14 -7 v 7 M 18.5 43.6 m -8 -13.3 h -5 M 18.5 43.6 m -2.4 -28 l -3.55 -3.55 M 18.5 43.6 m 15 -34.6 v -5 M 18.5 43.6 m 32.4 -28 l 3.55 -3.55 M 18.5 43.6 m 38 -13.3 h 5 M 18.5 43.6 m 7 -12.3 a 7.5 6.15 0 0 1 8 -6.5" style="filter:url(#icondropshadow);"></path><text x="77" y="42" id="logo-text-part-one" fill="url(#logo-svg-color-gradient)" style="filter:url(#textdropshadow);">lyte</text><text x="139" y="42" id="logo-text-part-two" fill="url(#lytedev-logo-foreground-gradient)" style="filter:url(#textdropshadow);">dev</text></svg></a>
 
 					<input type="checkbox" id="mobile-menu-toggle" tabindex="1" />
-					<label class="btn" id="mobile-site-navigation-toggle" for="mobile-menu-toggle" data-close-label="Close Menu">Menu</label>
+					<label class="btn" id="mobile-site-navigation-toggle" for="mobile-menu-toggle" data-close-label="Close Menu" role="button">Menu</label>
 
 					<ul id="site-navigation-links">
 						
@@ -88,7 +89,13 @@
 		</div>
 
 		<script src="/scripts/site.js"></script>
-		<link rel="icon" href="/img/favicon.png">
-
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-43157826-1', 'auto');
+			ga('send', 'pageview');
+		</script>	
 	</body>
 </html>

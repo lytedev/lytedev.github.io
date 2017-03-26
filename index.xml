@@ -21,7 +21,7 @@
 
 &lt;div class=&#34;text-center&#34;&gt;
     &lt;figure&gt;
-        &lt;img src=&#34;https://lytedev.io/img/daniel.png&#34; class=&#34;avatar&#34; alt=&#34;A photo of Daniel taken on his wedding day.&#34; title=&#34;Daniel&#34;&gt;
+        &lt;img src=&#34;https://lytedev.io/img/daniel.jpg&#34; class=&#34;avatar&#34; alt=&#34;A photo of Daniel taken on his wedding day.&#34; title=&#34;Daniel&#34;&gt;
         &lt;figcaption style=&#34;visibility:hidden;height:0&#34;&gt;&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/div&gt;
@@ -52,7 +52,7 @@ beginning to show its age. I have an odd obsession with mechanical keyboards
 
 &lt;div class=&#34;text-center&#34;&gt;
     &lt;figure&gt;
-        &lt;img src=&#34;https://lytedev.io/img/daniel-and-valerie.png&#34; class=&#34;avatar&#34; alt=&#34;Daniel and his wife in a forest.&#34; title=&#34;Daniel and Valerie&#34;&gt;
+        &lt;img src=&#34;https://lytedev.io/img/daniel-and-valerie.jpg&#34; class=&#34;avatar&#34; alt=&#34;Daniel and his wife in a forest.&#34; title=&#34;Daniel and Valerie&#34;&gt;
         &lt;figcaption&gt;My wife and I. Yes. It&#39;s true. I only have the &lt;strong&gt;one&lt;/strong&gt; pose.&lt;/figcaption&gt;
     &lt;/figure&gt;
 &lt;/div&gt;
@@ -159,6 +159,8 @@ game development industry is currently a bit overloaded.&lt;/p&gt;
 &lt;p&gt;Occasionally, I will compile aggregate statistics about the number of visitors this site receives and browsers being used. No personally identifying data is included in this type of reporting.&lt;/p&gt;
 
 &lt;p&gt;All of my activity falls within the bounds of the &lt;a href=&#34;http://www.google.com/analytics/terms/us.html&#34;&gt;Google Analytics Terms of Service&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&#34;lead text-center&#34;&gt;Done here? Head back to the &lt;a href=&#34;https://lytedev.io/&#34;&gt;home page&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
