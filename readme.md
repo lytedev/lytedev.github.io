@@ -7,13 +7,13 @@
 * Setup [Hugo][hugo]:
 	`export GOPATH="$HOME/go" && go get -v github.com/spf13/hugo`
 
-* Pull down this repository (and it's submodules, which contains the theme):
-	`git clone --recursive https://github.com/lytedev/lytedev.github.io.git`
+* Pull down this repository:
+	`git clone https://github.com/lytedev/lytedev.github.io.git`
 
-* Or if you just want the theme submodule after cloning this repository:
-	`git submodule update --init --recursive`
+* Pull down the theme:
+	`git clone https://github.com/lytedev/lytedev-hugo-theme.git themes/lytedev`
 
-* Or still if you just want the theme in another directory and symlinked in:
+* Or if you want the theme in another directory and symlinked in:
 	`git clone https://github.com/lytedev/lytedev-hugo-theme.git ../lytedev-hugo-theme && ln -s "$PWD"/../lytedev-hugo-theme "$PWD"/themes/lytedev`
 
 * Pull down dependencies:
@@ -22,8 +22,8 @@
 * Build the theme and our files:
 	`yarn run build-all`
 
-* Or (if we're developing) serve it up and rebuild everything as files are
-	updated: `yarn run dev` (visit [http://localhost:1313][localdev])
+* Or (if we're developing) serve it up and rebuild everything as files changed:
+	`yarn run dev` (visit [http://localhost:1313][localdev])
 
 * The site can be deployed via the `deploy.coffee` script. You can run it with:
 	`yarn run deploy`

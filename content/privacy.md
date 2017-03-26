@@ -16,5 +16,7 @@ Occasionally, I will compile aggregate statistics about the number of visitors t
 
 All of my activity falls within the bounds of the [Google Analytics Terms of Service][ga-tos].
 
+<p class="lead text-center">Done here? Head back to the <a href="/">home page</a>.</p>
+
 
 [ga-tos]: http://www.google.com/analytics/terms/us.html

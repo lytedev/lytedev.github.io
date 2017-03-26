@@ -5,7 +5,7 @@ imageOverlayColor: "#000"
 imageOverlayOpacity: 0.6
 heroBackgroundColor: "#0af"
 title: About Me
-description: "A little about the man behind the web."
+description: "A little about the man behind this website."
 ---
 
 <div class="text-center">
