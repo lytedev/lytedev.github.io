@@ -51,7 +51,7 @@ a trained and working Physical Therapist Assistant and somewhat of a fitness
 and health nut, which has yet to rub off on me (darn!). We've been married since
 late 2016 and we fall more in love every day. We currently live in a cozy little
 apartment which she somehow manages to keep clean, organized, and
-well-decorated, between working her two jobs.
+well-decorated between working her two jobs.
 
 I could talk about her for quite a long time, but this probably isn't the place
 to do that. We (sort of) run a blog at
