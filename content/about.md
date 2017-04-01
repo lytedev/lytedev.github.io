@@ -1,6 +1,6 @@
 ---
 date: 2017-02-22T14:43:02-06:00
-image: /img/space.jpg
+image: /img/space-blurred.jpg
 imageOverlayColor: "#000"
 imageOverlayOpacity: 0.6
 heroBackgroundColor: "#0af"
