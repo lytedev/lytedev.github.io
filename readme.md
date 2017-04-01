@@ -2,6 +2,10 @@
 
 > My personal blog/portfolio/site generated with Hugo.
 
+**Note**: This repository's `master` branch contains the built static pages. If
+you're wanting the Hugo-compatible files in order to build the site, you want
+the `source`  branch.
+
 ## Setup
 
 * Setup [Hugo][hugo]:
