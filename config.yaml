@@ -32,6 +32,7 @@ menu:
 
 params:
   googleAnalyticsCode: "UA-43157826-1"
+  themeColor: "#a02d3a" # #e03d5a
   index:
     image: /img/desktop-blurred.jpg
     heroBackgroundColor: "#333"
