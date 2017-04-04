@@ -8,8 +8,10 @@ the `source`  branch.
 
 ## Setup
 
+* Setup [Go][go-setup]
+
 * Setup [Hugo][hugo]:
-	`export GOPATH="$HOME/go" && go get -v github.com/spf13/hugo`
+	`go get -v github.com/spf13/hugo`
 
 * Pull down this repository:
 	`git clone https://github.com/lytedev/lytedev.github.io.git`
@@ -39,3 +41,4 @@ See `package.json` for other build/watch combinations and options.
 
 [hugo]: https://gohugo.io
 [localdev]: http://localhost:1313
+[go-setup]: https://golang.org/doc/install
