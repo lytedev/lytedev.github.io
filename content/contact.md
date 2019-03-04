@@ -30,7 +30,7 @@ description: "Need to get in touch?"
 	</form>
 	<small>
 		<p>
-			Email form not working for you? Just email me: <a href="mailto:daniel@lytedev.io">daniel@lytedev.io</a>
+			Form not working for you? Just email me: <a href="mailto:daniel@lytedev.io">daniel@lytedev.io</a>
 		</p>
 	</small>
 </div>
