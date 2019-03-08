@@ -42,7 +42,7 @@ Notice that we left out the [`matrix-nio`][matrix-nio] dependency. It's not in
 PyPi, so we can't just `pip2 install matrix-nio` (yet!) and PyPi's `nio` package
 is something probably unrelated, so we'll need to install it manually.
 
-## `matrix-nio`
+## Installing `matrix-nio`
 
 Let's go ahead and clone down the repository and get ready to do some stuff:
 
