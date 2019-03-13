@@ -6,7 +6,7 @@ imageOverlayOpacity: 0.7
 heroBackgroundColor: "#333"
 description: For those of us who want to self-host and display their work in a "socially expectable" manner.
 title: Mirroring Gitea to Other Repository Management Services
-draft: true
+draft: false
 ---
 
 I have a [Gitea][gitea] instance I self-host at home. I keep most of my
