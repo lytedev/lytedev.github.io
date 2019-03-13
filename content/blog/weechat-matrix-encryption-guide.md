@@ -17,9 +17,11 @@ a semi-annoying setup, as the entire project is still under heavy development.
 
 # TL;DR
 
-Run `git clone
++ Setup [dependencies](#dependencies)
++ Run `git clone
 https://git.faceless.lytedev.io/lytedev/weechat-matrix-encryption-guide.git
-/tmp/wmeg && /tmp/wmeg/easy-script.bash` and skip to the end.
+/tmp/wmeg && $EDITOR /tmp/wmeg/easy-script.bash && /tmp/wmeg/easy-script.bash`
++ [Configure](#configuration) as needed
 
 ## Python Versions
 
@@ -46,9 +48,20 @@ is something probably unrelated, so we'll need to install it manually.
 
 Let's go ahead and clone down the repository and get ready to do some stuff:
 
-```
+```bash
 git clone https://github.com/poljar/matrix-nio.git
 cd matrix-nio
+```
+
+```go-html-template
+<section id="main">
+  <div>
+    <h1 id="title">{{ .Title }}</h1>
+    {{ range .Pages }}
+      {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
 ```
 
 If you're looking around, documentation seems a bit sparse on how to do this,

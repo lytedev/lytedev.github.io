@@ -3,6 +3,9 @@ title: "lytedev"
 baseURL: "https://lytedev.io/"
 theme: "lytedev"
 metaDataFormat: "yaml"
+pygmentsCodeFences: true
+pygmentsCodeFencesGuessSyntax: true
+pygmentsUseClasses: true
 
 permalinks:
   post: /blog/:title
