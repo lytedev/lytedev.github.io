@@ -81,10 +81,6 @@ iex(6)> "siiiiiiiiiick"
 
 Awesome! Using this, I can *definitely* construct a basic form!
 
-Oh, by the way, I'm using [Slime][slime] instead of [EEx][eex] for my
-templates. If you haven't heard of it, you should check it out. It makes for
-very clean template code.
-
 So, we'll want an admin controller that knows how to add new schema entries
 generically as well as edit and update existing ones:
 
@@ -169,6 +165,10 @@ just need to setup the view to know how to handle the view logic (duh).
 
 First, though, let's go to our template and figure out how we want it to work,
 then we know what helper functions we'll need in our view.
+
+Oh, by the way, I'm using [Slime][slime] instead of [EEx][eex] for my
+templates. If you haven't heard of it, you should check it out. It makes for
+very clean template code.
 
 ```elixir
 # edit.html.slime
