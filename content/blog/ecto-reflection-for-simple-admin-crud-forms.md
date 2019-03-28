@@ -32,7 +32,8 @@ Leverage your Ecto schemas' [`__schema__/1`][__schema__] and
 metadata created when using the [`schema/2`][schema/2] macro. From there, you
 can decide how to render an appropriate HTML field in a form. From there, you
 can either use [`Ecto.Changeset.change/2`][Ecto.Changeset.change/2] to handle
-the results of an admin user submitting those forms.
+the results of an admin user submitting those forms or implement some sort of
+protocol that lets you specify an admin-specific changeset.
 
 ## Getting That Sweet, Sweet Metadata
 
