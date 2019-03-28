@@ -292,6 +292,9 @@ def admin_readable_associations(_s), do:
 def admin_editable_fields(_s), do: @editable_associations
 ```
 
+You could use this *and* define the implementation for `Any` *and* use the
+aforementioned schema reflection and get the best of both worlds!
+
 Anyways, I have a billion ideas on how to extend this basic concept. Hopefully
 you can implement your own admin interface without writing a form for every
 single schema you have, too! Ahh, simplicity.
