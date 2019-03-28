@@ -45,7 +45,7 @@ select][select_attributes] for a [`many_to_many/3`][many_to_many/3] association,
 etc.
 
 After asking in the ever-helpful [Elixir Slack][elixir-slack], somebody
-mentioned that Ecto Schemas [supported reflection][__schema__] using to
+mentioned that Ecto Schemas [supported reflection][__schema__] using
 a `__schema__` method that could access what I was looking for.
 
 ```elixir
@@ -75,17 +75,22 @@ iex(5)> MyApp.Accounts.User.__schema__ :association, :roles
   unique: false,
   where: []
 }
+iex(6)> "siiiiiiiiiick"
+...
 ```
 
-Awesome! Using this, I can *definitely* construct a basic form automatically!
+Awesome! Using this, I can *definitely* construct a basic form!
 
 Oh, by the way, I'm using [Slime][slime] instead of [EEx][eex] for my
-templates!
+templates. If you haven't heard of it, you should check it out. It makes for
+very clean template code.
 
-So, we'll want an admin controller that knows how to add new schema entries as
-well as edit and update existing ones. Let's check out our controller:
+So, we'll want an admin controller that knows how to add new schema entries
+generically as well as edit and update existing ones:
 
 ```elixir
+# admin_controller.ex
+
 @models %{
 	"user" => MyApp.Accounts.User,
 	"role" => MyApp.Accounts.Role
@@ -166,6 +171,8 @@ First, though, let's go to our template and figure out how we want it to work,
 then we know what helper functions we'll need in our view.
 
 ```elixir
+# edit.html.slime
+
 h1
 	| Edit #{String.capitalize(to_string(@schema))}
 	| ID #{@id}
@@ -189,12 +196,28 @@ h1
 				= association(f, @schema_module, association)
 ```
 
-Wow, this is cool. Obviously, most of the magic is going to be in the view
+Wow, this is cool! Obviously, most of the magic is going to be in the view
 functions we now have to implement, but this *one* view will theoretically
 handle any basic schema! This is great!
 
-Let's get to the nitty gritty and implement those helpers `field/3` and
-`association/3`:
+If you're locking down which fields an admin can modify, you can do something
+like this:
+
+```elixir
+# edit.html.slime
+
+# for field in fields...
+
+.field
+	label
+		.label-text #{String.capitalize(to_string(field))}
+		= if Enum.member?(@editable_fields, field) do
+			= field(f, @schema_module, field)
+		- else
+			input readonly="true" value=Map.get(@changeset.data, field)
+```
+
+Let's get to the nitty gritty and implement `field/3` and `association/3`:
 
 ```elixir
 def field(form, schema_module, field, opts \\ []) do
@@ -239,18 +262,35 @@ slugs, user-provided information, etc. Therefore this looks a bit different in
 practice on my end.
 
 ```elixir
+# accounts/user.ex
+
 defimpl MyApp.AdminEditable, for: MyApp.Accounts.User do
   @readable [:id, :email, :full_name, :inserted_at, :updated_at]
   @editable [:verified]
 
   def admin_readable_fields(_s), do: @readable ++ @editable
   def admin_editable_fields(_s), do: @editable
+
+	# this controls what shows up on the index for a given schema
   def admin_index_fields(s), do: admin_readable_fields(s)
 end
 ```
 
 You could then use these methods instead of schema reflection. You could also
 handle associations separately as well.
+
+```elixir
+# accounts/user.ex
+
+# defimpl MyApp.AdminEditable ...
+
+@readable_associations []
+@editable_associations [:roles]
+
+def admin_readable_associations(_s), do:
+	@readable_associations ++ @editable_associations
+def admin_editable_fields(_s), do: @editable_associations
+```
 
 Anyways, I have a billion ideas on how to extend this basic concept. Hopefully
 you can implement your own admin interface without writing a form for every
@@ -370,6 +410,7 @@ end
 [__schema__]: https://hexdocs.pm/ecto/3.0.7/Ecto.Schema.html#module-reflection
 [schema/2]: https://hexdocs.pm/ecto/3.0.7/Ecto.Schema.html#schema/2
 [Ecto.Changeset.change/2]: https://hexdocs.pm/ecto/3.0.7/Ecto.Changeset.html#change/2
+[elixir-slack]: https://elixir-slackin.herokuapp.com/
 [select_attributes]:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#Attributes
 [many_to_many/3]: https://hexdocs.pm/ecto/3.0.7/Ecto.Schema.html#many_to_many/3
 [slime]: https://github.com/slime-lang/slime
