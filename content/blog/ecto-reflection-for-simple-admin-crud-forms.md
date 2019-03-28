@@ -174,11 +174,11 @@ very clean template code.
 # edit.html.slime
 
 h1
-	| Edit #{String.capitalize(to_string(@schema))}
-	| ID #{@id}
+	= "Edit #{String.capitalize(to_string(@schema))}"
+	= " ID #{@id}"
 
-- path = Routes.admin_path(@conn, :update, @schema, @id)
-= form_for @changeset, path, [as: :data], fn f ->
+- action_path = Routes.admin_path(@conn, :update, @schema, @id)
+= form_for @changeset, action_path, [as: :data], fn f ->
 	h2 Fields
 
   = for field <- @schema_module.__schema__(:fields) do
@@ -298,7 +298,7 @@ single schema you have, too! Ahh, simplicity.
 
 Here's all the code jumbled together (and perhaps slightly different):
 
-## Altogether Now!
+## All Together Now!
 
 ```elixir
 # router.ex
