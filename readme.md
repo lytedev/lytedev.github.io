@@ -16,12 +16,6 @@ the `source`  branch.
 * Pull down this repository:
 	`git clone https://github.com/lytedev/lytedev.github.io.git`
 
-* Pull down the theme:
-	`git clone https://github.com/lytedev/lytedev-hugo-theme.git themes/lytedev`
-
-* Or if you want the theme in another directory and symlinked in:
-	`git clone https://github.com/lytedev/lytedev-hugo-theme.git ../lytedev-hugo-theme && ln -s "$PWD"/../lytedev-hugo-theme "$PWD"/themes/lytedev`
-
 * Pull down dependencies:
 	`pushd themes/lytedev && yarn && popd && yarn`
 

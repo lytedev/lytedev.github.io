@@ -1,0 +1,11 @@
+{{ define "main" }}
+	<section class="content" id="page-content">
+		<div class="wrapper">
+			{{ range $i, $p := where (.Paginate .Data.Pages).Pages "Section" "blog" }}
+				{{ $p.Render "li" }}
+			{{ else }}
+				<p class="text-center">Looks like there's nothing here!... yet!</p>
+			{{ end }}
+		</div>
+	</section>
+{{ end }}

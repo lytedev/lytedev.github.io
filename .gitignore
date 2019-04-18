@@ -1,6 +1,5 @@
 node_modules
 /public
-/themes
 /static/styles
 /static/scripts
 *.log

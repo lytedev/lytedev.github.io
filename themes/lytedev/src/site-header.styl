@@ -1,0 +1,74 @@
+#site-header
+	position relative
+	z-index 1
+	overflow visible
+	color #fff
+	text-shadow 0rem 0.05rem 0.2rem #000
+	background-color $brand-primary-color
+	background-size cover
+	background-position center
+	padding 2rem
+	display flex
+	text-align center
+	flex-direction column
+
+	// the background image pseudo element
+	#site-header-overlay
+		position absolute
+		height 100%
+		width 100%
+		top 0
+		left 0
+		background-color rgba(0, 0, 0, 0.5)
+		background-position cover
+		z-index -4
+
+	#intro
+		display flex
+		flex-direction column
+		align-self center
+		align-items center
+		justify-content center
+		flex-grow 1
+		text-align center
+		padding-bottom 2em
+
+		@media screen and (max-width: $mobile-breakpoint)
+			margin-top 3rem	
+
+		.wrapper
+			min-height 20rem
+			display flex
+			flex-direction column
+			flex-grow 1
+			align-self center
+			align-items center
+			text-align center
+
+		h2
+			margin 0
+			padding 0
+			font-size 4.0rem
+			font-weight 300
+			line-height 1.4em
+			margin-bottom 0.5em
+			margin-top 1em
+
+		p
+			margin 0
+			padding 0
+			font-size 2.1rem
+			line-height 1.4em
+
+#site-header.hero-header, body.home-page #site-header
+	height 100vh
+
+	#site-header-overlay
+		height 100vh
+
+.hero-down-indicator
+	position relative
+	top -2rem
+	font-style normal
+	font-size 2.4rem
+	opacity 0.5

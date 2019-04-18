@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+	<p>
+		You should override the <code>&quot;main&quot;</code> block in your site's
+		<code>layouts/index.html</code> to change this content:
+	</p>
+
+	<blockquote><pre>{{"{{"}} define "main" {{"}}"}}
+  &lt;p&gt;This will be your site's homepage's new content!&lt;/p&gt;
+{{"{{"}} end {{"}}"}}</pre></blockquote>
+
+
+	<p>
+		You can change the <code>title</code> as well by overriding the
+		<code>&quot;title&quot;</code> block:
+	</p>
+
+	<blockquote><pre>{{"{{"}} define "title" {{"}}"}}
+  Index - {{ .Site.Title }}
+{{"{{"}} end {{"}}"}}</pre></blockquote>
+
+{{ end }}
+
+{{ define "title" }}
+	Home - {{ .Site.Title }}
+{{ end }}

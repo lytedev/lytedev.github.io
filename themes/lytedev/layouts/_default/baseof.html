@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+		<link rel="stylesheet" href="/styles/main.css"></script>
+		{{- if .Site.Params.themeColor -}}
+			<meta name="theme-color" content="{{ .Site.Params.themeColor }}">
+			<meta name="msapplication-navbutton-color" content="{{ .Site.Params.themeColor }}">
+			<meta name="apple-mobile-web-app-status-bar-style" content="{{ .Site.Params.themeColor }}">
+		{{- else -}}
+			<meta name="theme-color" content="#a02d3a">
+			<meta name="msapplication-navbutton-color" content="#a02d3a">
+			<meta name="apple-mobile-web-app-status-bar-style" content="#a02d3a">
+		{{- end -}}
+		{{ block "head-end" . }}{{ partial "head-end.html" . }}{{ end }}
+	</head>
+	<body class="{{ .Kind }}-page">
+		<div id="site">
+
+			<header id="site-header" style="
+					 {{- if and (.Site.Params.Index.heroBackgroundColor) (eq .Kind "home") -}}
+						 background-color:{{ .Site.Params.Index.heroBackgroundColor }};
+					 {{- else if ($.Param "heroBackgroundColor") -}}
+						 background-color:{{ $.Param "heroBackgroundColor" }};
+					 {{- end -}}
+					 {{- if and (.Site.Params.Index.image) (eq .Kind "home") -}}
+						 background-image:url({{ .Site.Params.Index.image }});
+					 {{- else if ($.Param "image") -}}
+						 background-image:url({{ $.Param "image" }});
+					 {{- end -}}
+					 ">
+
+				<div id="site-header-overlay" style="
+						{{- if and (.Site.Params.Index.imageOverlayColor) (eq .Kind "home") -}}
+							background-color:{{ .Site.Params.Index.imageOverlayColor }};
+						{{- else if ($.Param "imageOverlayColor") -}}
+							background-color:{{ $.Param "imageOverlayColor" }};
+						{{- end -}}
+						
+						{{- if and (.Site.Params.Index.imageOverlayOpacity) (eq .Kind "home") -}}
+							opacity:{{ .Site.Params.Index.imageOverlayOpacity }};
+						{{- else if ($.Param "imageOverlayOpacity") -}}
+							opacity:{{ $.Param "imageOverlayOpacity" }};
+						{{- end -}}
+						"></div>
+
+				<nav id="site-navigation">
+
+					{{ block "logo" . }}{{ partial "logo.html" . }}{{ end }}
+
+					<input type="checkbox" id="mobile-menu-toggle" tabindex="1" />
+					<label class="btn" id="mobile-site-navigation-toggle" for="mobile-menu-toggle" data-close-label="Close Menu" role="button">Menu</label>
+
+					<ul id="site-navigation-links">
+						{{ $currentPage := . }}
+						{{ range .Site.Menus.main }}
+							<li>
+								<a class="nav-link{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}">
+									{{ .Pre }}{{ .Name }}
+								</a>
+							</li>
+						{{ end }}
+					</ul>
+
+				</nav>
+
+				{{ block "intro" . }}
+					<div id="intro">
+						<h2 id="page-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+						<p id="page-description">{{ .Description }}</p>
+					</div>
+				{{ end }}
+
+			</header>
+
+			<main id="site-content" role="main">
+				{{ block "main" . }}
+				{{ end }}
+			</main>
+
+			<footer id="site-footer">
+				<section>
+					<p>Copyright &copy; Daniel Flanagan</p>
+				</section>
+				<section>
+					<a href="/privacy">Privacy</a>
+				</section>
+			</footer>
+		</div>
+
+		<script src="/scripts/site.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', '{{ .Site.Param "googleAnalyticsCode" }}', 'auto');
+			ga('send', 'pageview');
+		</script>	{{ block "body-end" . }}{{ partial "body-end.html" . }}{{ end }}
+	</body>
+</html>
