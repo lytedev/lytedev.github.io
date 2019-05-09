@@ -1,0 +1,16 @@
+{{ define "main" }}
+	<article class="content" id="page-content">
+		<div class="wrapper">
+			<small class="post-date">
+				<a href="{{ .Permalink }}" class="block-link small-post-link">
+					Posted {{ .Date.Format "Jan 2, 2006" }}
+				</a>
+			</small>
+			{{ .Content }}
+		</div>
+	</article>
+{{ end }}
+
+{{ define "title" }}
+	{{ .Title }} - {{ .Site.Title }}
+{{ end }}
