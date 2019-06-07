@@ -9,6 +9,10 @@ description: "Need to get in touch?"
 ---
 
 <div class="text-center">
+	<p>
+		Email me at <a href="mailto:daniel@lytedev.io">daniel@lytedev.io</a> or use
+		the form below.
+	</p>
 	<form action="https://formspree.io/daniel@lytedev.io" method="POST">
 		<div class="field">
 			<label name="name">Full Name</label>
@@ -28,9 +32,4 @@ description: "Need to get in touch?"
     <input type="hidden" name="_next" value="/thanks" />
     <input type="hidden" name="_subject" value="Contact Form Submission - lytedev" />
 	</form>
-	<small>
-		<p>
-			Form not working for you? Just email me: <a href="mailto:daniel@lytedev.io">daniel@lytedev.io</a>
-		</p>
-	</small>
 </div>
