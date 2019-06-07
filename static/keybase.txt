@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/lytedev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lytedev.io
+  * I am lytedev (https://keybase.io/lytedev) on keybase.
+  * I have a public key with fingerprint 823E B345 6C62 D193 8904  2027 5B20 20A0 F992 1EF4
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a02d2fb8ef22028aaa81a1f4af90927261348cc81e710abea67e894cb0dbfc0b0a",
+      "fingerprint": "823eb3456c62d193890420275b2020a0f9921ef4",
+      "host": "keybase.io",
+      "key_id": "5b2020a0f9921ef4",
+      "kid": "01015d6c01d76506b45cbbbea786839ee35726071bb31a940f375214d6d21cfb3ecb0a",
+      "uid": "3f934c8f8aeac29e6b103ed47dfe6619",
+      "username": "lytedev"
+    },
+    "merkle_root": {
+      "ctime": 1559891561,
+      "hash_meta": "6f6c826649de8d4466bf39145e86668ec4490483cbc09f6c4a685accf0d558aa",
+      "seqno": 5525754
+    },
+    "revoke": {
+      "sig_ids": [
+        "465dc58d8b38316848e8da1fb51577b5807ec5527cd93ca7b70fe53f34cf5adf0f"
+      ]
+    },
+    "service": {
+      "hostname": "lytedev.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1559891555,
+  "expire_in": 157680000,
+  "prev": "c65938765df4b80170b601bd105dbcb4753dc5336ff8f8ca13787a6a6865c690",
+  "seqno": 43,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtk29IXlUcxx+XkQrbjNbYixx6MzWTdc49f+/TZn/AsZDhfBMON57OX709j8/z
+eJ+rzjZH9CIyFrjJiBpGEKNRGoS9WS2QvRDmQgycsmhU5JtaEIHBHEs71yVRdF/c
+yzl8f9/f935+54xtfyBVUdZdW/vB2rm9q2XXf5apY3d39Jz0ZEEPe+mTXtZsfkxO
+m1KcyYbaS3sA+kAAX/tWcmN9H/hcCMGhgBYLG4DAZz6FCHOlODQMAiGNoMzwACsJ
+tLQKSCC8Fs+G+R4TFaMwHztb7iMjESZUUV/DAPEAYOfNiHRv19AGgQ+Nxa6wt1BK
+Klw4KUpmX1hwe26R2Yz3P/qt3AASTRWAmlECqMRESemyMU45CoxBxAUHDEqJoAgw
+sIgRH2JNtQ+Vlcio+7kHNu2QDRBW3HJhhPIDQyUEyGjMtDWUwiARlkyUF33GqXPD
+sdFm0Btp8fpMlM2ZTFQoxAlbFYeJAhIS8AASCt3/iVJvps/EwhVSSxX3KcWBNlxj
+TKm0KICYGE4p5UZh7EBxpKQCgdNiQTkRSlmgCXGDcTFKpj9f8NKE+IQR7BJEZrCQ
+NUnzUtjjqJW8dLeHKdFqJiZcc4k4gpRj7jq6qUoCCWOScMCMci5M6QApwSQD1hBk
+HQZLhLbAesdHknbRYKg27ZNB/RvA/WEVo0JcUIWc2++N42IpnXCJh4uJcMjIzN8W
+GRnmtTskrmLQRKWwkHecnPI/yAhp8cyJYhiZTJgoCKMcuCfp45CnPUWJO09u6Npi
+yQFkQFIApYaAaKkkZgRpRRCi1rp5KgER40xQR5ISRQPwD0OMXE7R4zwdubyIByLj
+jVSNlqHyVFlFqmZ3XfnrrdNtOfnN+Gh5bePWxXpwW3KrUlWV1Vs7Q/mK1HzNzfkl
+Nj310nPjPfXz53+94D+5VN0++/Da13c+X6m83X9k2/4O8WLT+89f6P9lfU/8SWdb
+9t7McnXz5MuxLN3rfHt0+3Jq16nLJz57pOvGrV1NU99fm36t+ya/1Fx/pv3W3anj
+E/PtNVOvLB/c+DC3sDjZtPDUmZ9+23f00OnDk1/VVb0Qz27/vYFlrhUbX708G3Q+
+Xj/WNfTod22Hnmnj+wdbhz6eu13Zcan18GMffVG3syF7auWt9xrfPDsx/HR0JNi5
+MLNed3WEfHl67cqdxT/OLr2j/lx96ODc3o0nxs69++mO1YajXQPr39r4QN2x889e
+DG9c7GhOLx7YmNi9cuWH6fGF61fn3qj8cc9f
+=C0L+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lytedev
+
+==================================================================
+
