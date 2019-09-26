@@ -16,7 +16,7 @@
   "scripts": {
     "build-styles": "mkdirp ./static/styles && stylus --include ./src/ --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress < ./src/main.styl > ./static/styles/main.css",
     "build-scripts": "mkdirp ./static/scripts && coffee -o ./static/scripts/ --compile ./src/site.coffee",
-		"build": "npm run build-styles & npm run build-scripts",
+    "build": "npm run build-styles & npm run build-scripts",
     "watch-styles": "nodemon -e styl -x \"npm run build-styles\"",
     "watch-scripts": "nodemon -e coffee -x \"npm run build-scripts\"",
     "watch": "npm run watch-styles & npm run watch-scripts",
