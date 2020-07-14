@@ -4,8 +4,8 @@
   "description": "My personal blog, portfolio, and website at https://lyte.dev",
   "main": "index.js",
   "scripts": {
-    "build-styles": "yarn run mkdirp static/styles && yarn run stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/styles/site.styl --out static/styles/site.css",
-    "build-scripts": "yarn run mkdirp static/scripts && yarn run coffee -o ./static/scripts/ --compile ./src/scripts/",
+    "build-styles": "mkdir -p static/styles && yarn run stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/styles/site.styl --out static/styles/site.css",
+    "build-scripts": "mkdir -p static/scripts && yarn run coffee -o ./static/scripts/ --compile ./src/scripts/",
     "build-logo": "yarn run coffee ./src/logo/generate-logo.coffee",
     "build": "yarn run build-styles & yarn run build-scripts & yarn run build-logo",
     "watch-styles": "yarn run nodemon -e styl -x \"yarn run build-styles\"",
