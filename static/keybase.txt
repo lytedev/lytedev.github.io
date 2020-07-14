@@ -4,7 +4,7 @@ https://keybase.io/lytedev
 
 I hereby claim:
 
-  * I am an admin of https://lytedev.io
+  * I am an admin of https://lyte.dev
   * I am lytedev (https://keybase.io/lytedev) on keybase.
   * I have a public key with fingerprint 823E B345 6C62 D193 8904  2027 5B20 20A0 F992 1EF4
 
@@ -32,7 +32,7 @@ To do so, I am signing this object:
       ]
     },
     "service": {
-      "hostname": "lytedev.io",
+      "hostname": "lyte.dev",
       "protocol": "https:"
     },
     "type": "web_service_binding",

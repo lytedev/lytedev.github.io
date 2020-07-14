@@ -1,7 +1,7 @@
 name = "lytedev"
 license = "MIT"
 licenselink = "//opensource.org/licenses/MIT"
-description = "The theme for my personal site at https://lytedev.io"
+description = "The theme for my personal site at https://lyte.dev"
 homepage = "https://github.com/lytedev/lytedev-hugo-theme"
 tags = ["blog", "portfolio", "hero"]
 features = ["blog", "hero", "portfolio"]
@@ -11,4 +11,4 @@ features = ["blog", "hero", "portfolio"]
 
 [author]
   name = "lytedev"
-  homepage = "https://lytedev.io"
+  homepage = "https://lyte.dev"

@@ -19,7 +19,7 @@ a semi-annoying setup, as the entire project is still under heavy development.
 
 + Setup [dependencies](#dependencies)
 + Run `git clone
-https://git.faceless.lytedev.io/lytedev/weechat-matrix-encryption-guide.git
+https://git.faceless.lyte.dev/lytedev/weechat-matrix-encryption-guide.git
 /tmp/wmeg && $EDITOR /tmp/wmeg/easy-script.bash && /tmp/wmeg/easy-script.bash`
 + [Configure](#configuration) as needed
 

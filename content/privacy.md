@@ -8,7 +8,7 @@ title: Privacy Policy
 description: "Basically, I use Google Analytics."
 ---
 
-Like millions of other websites, I use Google Analytics on lytedev.io. It records data about my visitors -- that's you! It tracks what website you came form to get here, how long you stay, some information about the device you're using to view lytedev.io, and some other information.
+Like millions of other websites, I use Google Analytics on lyte.dev. It records data about my visitors -- that's you! It tracks what website you came form to get here, how long you stay, some information about the device you're using to view lyte.dev, and some other information.
 
 What do I do with this information? It helps me better understand the kind of people come to my site and what content they’re reading. This allows me to make better decisions about design and writing.
 

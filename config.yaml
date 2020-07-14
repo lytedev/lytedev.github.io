@@ -1,6 +1,6 @@
 languageCode: "en-us"
 title: "lytedev"
-baseURL: "https://lytedev.io/"
+baseURL: "https://lyte.dev/"
 theme: "lytedev"
 metaDataFormat: "yaml"
 pygmentsCodeFences: true
@@ -45,4 +45,4 @@ params:
 
   author:
     name: "Daniel Flanagan"
-    email: "daniel@lytedev.io"
+    email: "daniel@lyte.dev"

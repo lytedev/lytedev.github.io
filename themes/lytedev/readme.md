@@ -1,6 +1,6 @@
 # lytedev-hugo-theme
 
-> The Hugo theme for my personal site at https://lytedev.io
+> The Hugo theme for my personal site at https://lyte.dev
 
 ![Index page][index-screenshot]
 ![About page][about-screenshot]

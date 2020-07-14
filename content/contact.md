@@ -10,10 +10,10 @@ description: "Need to get in touch?"
 
 <div class="text-center">
 	<p>
-		Email me at <a href="mailto:daniel@lytedev.io">daniel@lytedev.io</a> or use
+		Email me at <a href="mailto:daniel@lyte.dev">daniel@lyte.dev</a> or use
 		the form below.
 	</p>
-	<form action="https://formspree.io/daniel@lytedev.io" method="POST">
+	<form action="https://formspree.io/daniel@lyte.dev" method="POST">
 		<div class="field">
 			<label name="name">Full Name</label>
 			<input type="text" name="name" placeholder="Daniel Flanagan" />

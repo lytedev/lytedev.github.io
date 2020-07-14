@@ -1,7 +1,7 @@
 {
   "name": "lytedev-hugo-theme",
   "version": "1.0.2",
-  "description": "The Hugo theme for my personal site at https://lytedev.io",
+  "description": "The Hugo theme for my personal site at https://lyte.dev",
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^6.7.5",
@@ -31,7 +31,7 @@
     "hugo",
     "hugo-theme"
   ],
-  "author": "daniel@lytedev.io",
+  "author": "daniel@lyte.dev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lytedev/lytedev-hugo-theme/issues"

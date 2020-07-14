@@ -1,7 +1,7 @@
 {
   "name": "lytedev-site",
   "version": "1.0.0",
-  "description": "My personal blog, portfolio, and website at https://lytedev.io",
+  "description": "My personal blog, portfolio, and website at https://lyte.dev",
   "main": "index.js",
   "scripts": {
     "build-styles": "yarn run mkdirp static/styles && yarn run stylus --use ./node_modules/poststylus --with \"['autoprefixer']\" --compress src/styles/site.styl --out static/styles/site.css",
@@ -37,7 +37,7 @@
     "portfolio",
     "static-site"
   ],
-  "author": "daniel@lytedev.io",
+  "author": "daniel@lyte.dev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lytedev/lytedev.github.io/issues"
