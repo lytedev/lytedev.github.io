@@ -52,7 +52,7 @@
     "nodemon": "^1.11.0",
     "postcss": "^5.2.15",
     "poststylus": "^1.0.0",
-    "pug": "^2.0.0-beta11",
+    "pug": "^3.0.1",
     "pug-cli": "^1.0.0-alpha6",
     "stylus": "^0.54.5"
   }
